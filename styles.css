@@ -1,0 +1,702 @@
+/* styles.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+}
+
+header {
+    background-color: #154360; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    color: #154360;
+}
+
+.logo img {
+    max-width: 100px; 
+}
+
+.hospital-info {
+    margin-top: 10px;
+}
+
+.top-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 8px;
+    border: 1px solid #ffffff; 
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.search-bar button {
+    background-color: #ffffff; 
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.search-bar input:hover {
+    border-color: #60ce80; 
+}
+
+.search-bar button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1); 
+}
+
+.user-buttons button {
+    background-color: #60ce80;
+    color: #ffffff; 
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.user-buttons button:hover {
+    background-color: #154360; 
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+}
+nav {
+    background-color: #f0f0f0; 
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #154360; 
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #60ce80;
+    transform: scale(1.1);
+}
+/*-----Home page----*/
+.home{
+ background-color: #dddddd70;
+}
+
+.home-heading {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.home-heading img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+.home-heading h2 {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 600;
+}
+.home-heading h2:hover{
+    color: #60ce80;
+    transition: 1s;
+}
+
+.home-heading button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #154360;
+    border-radius: 10px;
+    top: 50px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-heading button:hover {
+    background-color: #60ce80;
+}
+
+video {
+    width: 150%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.abtvid{
+    height: 350px;
+    width: 400px;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #154360; 
+    color: #ffffff; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-column {
+    color: #fff;
+    flex: 1;
+    padding: 10px;
+}
+.footer-column a{
+    color: #fff;
+}
+
+.logo img {
+    width: 100px; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin-right: 10px;
+    color: #fff;
+}
+
+/* Map Styles */
+iframe {
+    width: 100%;
+    height: 200px; 
+    border: none;
+}
+.copyright-section {
+    background-color: #154360;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/*-------------services page----------------------*/
+.service-heading {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.service-heading img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+.service-heading h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+}
+.service-heading h2:hover{
+    color: #60ce80;
+    transition: 1s;
+}
+
+.service-heading button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #154360;
+    border-radius: 10px;
+    top: 50px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service-heading button:hover {
+    background-color: #60ce80;
+}
+
+.service-table {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff31;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .service-table h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .service-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .service-table th, .service-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .service-table th {
+    background-color: #f2f2f246;
+  }
+  
+  .clinic-row {
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .clinic-row:hover {
+    background-color: #60ce80;
+    font-size: large;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .popup {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .popup-content {
+    padding: 20px;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    color: #aaa;
+  }
+  
+
+.opd-section {
+    margin-top: 20px;
+}
+
+.opd-section h2 {
+    color: #154360; 
+}
+
+.opd-section p {
+    margin-bottom: 20px;
+}
+
+.opd-services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.opd-service {
+    width: 30%;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #f0f0f0; 
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.opd-service:hover {
+    transform: scale(1.05);
+    background-color: #60ce80;
+    background-repeat: no-repeat;
+}
+
+.opd-service i {
+    font-size: 2em;
+    color: #154360;
+}
+
+.opd-service h3 {
+    margin-top: 10px;
+    color: #154360;
+}
+
+/* Emergency Unit Section styles */
+.emergency-section {
+    margin-top: 20px;
+}
+
+.emergency-section h2 {
+    color: #154360; 
+}
+
+.emergency-section p {
+    margin-bottom: 20px;
+}
+
+.emergency-services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.emergency-service {
+    width: 30%;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.emergency-service:hover {
+    transform: scale(1.05);
+    background-color: #60ce80;
+}
+
+.emergency-service i {
+    font-size: 2em;
+    color: #154360; 
+}
+
+.emergency-service h3 {
+    margin-top: 10px;
+    color: #154360; 
+}
+
+/*----------appointment---------*/
+.appoint{
+    background-image: url("img/wallpaperAppointment.png");
+    width: 100%;
+}
+
+.clinic-choose{
+    font-size: 20px;
+}
+
+/*------------------staff page------------------*/
+
+/* Doctor Categories styles */
+.doctor-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.category-card {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.selected {
+    border: 3px solid #00ff00;
+    transition: 0.5s;
+}
+
+.category-card:hover {
+    transform: scale(1.1);
+}
+
+.category-card p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.category-card p:hover {
+    transition: 0.5s;
+    color: #60ce80;
+}
+
+.doctor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.doctor-cards {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.doctor-card img {
+    width: 350px;
+    height: 350px;
+}
+
+.doctor-card:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.doctor-details {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffff;
+}
+.doctor-details p{
+    display: none;
+}
+
+.doctor-details h3 {
+    margin: 5px;
+    font-size: 16px;
+}
+
+/*---------News page-------*/
+
+
+.news-events-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.news-section, .events-section {
+    width: 48%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light Gray */
+    margin-bottom: 20px;
+}
+
+.news-cards, .event-cards {
+    justify-content: space-between;
+}
+
+.news-card, .event-card {
+    width: 100%;
+    max-width: 48%;
+    margin-bottom: 20px;
+}
+
+/*---------about us page-------------*/
+.about-section {
+    background: linear-gradient(to bottom, #1543604f, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-subsection {
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.about-subsection:hover {
+    background: linear-gradient(to bottom,#1543604f, #ffffff);
+    font-size: large;
+    transition: 0.5s
+}
+
+.about-subsection img {
+    max-width: 100%;
+    max-height: 450px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Gallery styles */
+.gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery-item {
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+/*-------------------contact us page-------------------------*/
+
+.contact-form {
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cont{
+    background-image: url("img/wallpaper.png");
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dcdcdc; /* Light Gray */
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+/*---------donate page----------*/
+.cont1{
+    background-image: url("img/wallpaperAppointment.png");
+}
+
+.donation-form {
+    margin: 20px auto;
+    color:white;
+    background-color: #15436023;
+    font-weight: 600;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.donation-type {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.donation-type input[type="radio"] {
+    margin-right: -40px;
+    color: #60ce80;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #60ce80;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #154360; 
+    transform: scale(1.1);
+}
+

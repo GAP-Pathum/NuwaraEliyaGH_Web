@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+   <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-1qY+X+4/BQaR6wFqFfMw+gftYEsL6Q3oVMkzK7p6qk5tzsIa8fmpV3t9XBRxGF+RvH6L4eB3i3yo5iZoWO2h3Cg==" crossorigin="anonymous" />
+    <title>Nuwara-Eliya General Hospital - Services</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/hospital_logo.png" alt="Hospital Logo">
+        </div>
+        <div class="hospital-info">
+            <h1>Nuwara-Eliya General Hospital</h1>
+            <p>Healing with Heart, Caring with Expertise.</p>
+        </div>
+
+        <!-- Top Navigation: Search Bar, Sign In, Sign Up -->
+        <div class="top-navigation">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>                        
+
+            <div class="user-buttons">
+                <button class="sign-in-btn" onclick="navigateTosignin()">Sign In</button>
+                <button class="sign-up-btn" onclick="navigateTosignup()">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="news.html">News and Events</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="service-heading">
+            <img src="img/wallpaperServices.png" alt="Hospital Services Wallpaper">
+            <h2>Committed to Care, Dedicated to Excellence – Where Your Health is Our Priority.<br>
+                Offering the Best in Hospital Services with Compassion, Expertise, and Innovation.
+            <br><br><br>
+            <button type="submit" class="app-btn" onclick="navigateToAppointment()">Appoint from here</button>
+            </h2>
+                
+        </section>
+
+        <section class="service-table">
+            <h2>Clinic Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Clinic</th>
+                        <th>Day & Time</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="clinic-row" data-popup="Cardiology Clinic schedule: Mon, Wed 9 AM - 5 PM">
+                        <td>Cardiology Clinic</td>
+                        <td>Monday: 9 AM - 5 PM</td>
+                        <td>Ground Floor, Room 101</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Orthopedic Clinic schedule: Tue, Thu 10 AM - 4 PM">
+                        <td>Orthopedic Clinic</td>
+                        <td>Tuesday: 10 AM - 4 PM</td>
+                        <td>Ground Floor, Room 102</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="ENT Clinic schedule: Fri 2 PM - 6 PM">
+                        <td>ENT Clinic</td>
+                        <td>Friday: 2 PM - 6 PM</td>
+                        <td>First Floor, Room 201</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Dermatology Clinic schedule: Mon, Thu 1 PM - 5 PM">
+                        <td>Dermatology Clinic</td>
+                        <td>Monday & Thursday 1 PM - 5 PM</td>
+                        <td>Second Floor, Room 202</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Eye Clinic schedule: Tue, Fri 9 AM - 1 PM">
+                        <td>Eye Clinic</td>
+                        <td>Tuesday & Friday: 9 AM - 1 PM</td>
+                        <td>Second Floor, Room 203</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Diabetic Clinic schedule: Wed, Sat 10 AM - 2 PM">
+                        <td>Diabetic Clinic</td>
+                        <td>Wednesday and Saturday: 10 AM - 2 PM</td>
+                        <td>Third Floor, Room 301</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Gynecology Clinic schedule: Tue, Fri 2 PM - 6 PM">
+                        <td>Gynecology Clinic</td>
+                        <td>Tuesday: 2 PM - 6 PM</td>
+                        <td>Third Floor, Room 302</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Obstetrics Clinic schedule: Mon, Wed 10 AM - 4 PM">
+                        <td>Obstetrics Clinic</td>
+                        <td>Monday & Wednesday: 10 AM - 4 PM</td>
+                        <td>Fourth Floor, Room 401</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Pediatric Clinic schedule: Thu, Sat 9 AM - 1 PM">
+                        <td>Pediatric Clinic</td>
+                        <td>Thursday & Saturday: 9 AM - 1 PM</td>
+                        <td>Fourth Floor, Room 402</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Medicine Clinic schedule: Tue, Fri 10 AM - 3 PM">
+                        <td>Medicine Clinic</td>
+                        <td>Tuesday & Friday: 10 AM - 3 PM</td>
+                        <td>Fifth Floor, Room 501</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Surgery Clinic schedule: Mon, Wed 2 PM - 6 PM">
+                        <td>Surgery Clinic</td>
+                        <td>Monday & Wednesday: 2 PM - 6 PM</td>
+                        <td>Fifth Floor, Room 502</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Hematology Clinic schedule: Thu, Sat 1 PM - 5 PM">
+                        <td>Hematology Clinic</td>
+                        <td>Thursday & Saturday: 1 PM - 5 PM</td>
+                        <td>Sixth Floor, Room 601</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Rheumatology Clinic schedule: Tue, Fri 2 PM - 5 PM">
+                        <td>Rheumatology Clinic</td>
+                        <td>Tuesday: 2 PM - 5 PM</td>
+                        <td>Sixth Floor, Room 602</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Psychiatry Clinic schedule: Mon, Wed 1 PM - 4 PM">
+                        <td>Psychiatry Clinic</td>
+                        <td>Monday: 1 PM - 4 PM</td>
+                        <td>Seventh Floor, Room 701</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Neurology Clinic schedule: Thu, Sat 10 AM - 3 PM">
+                        <td>Neurology Clinic</td>
+                        <td>Thursday & Saturday: 10 AM - 3 PM</td>
+                        <td>Seventh Floor, Room 702</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="Neurosurgery Clinic schedule: Tue, Fri 9 AM - 1 PM">
+                        <td>Neurosurgery Clinic</td>
+                        <td>Tuesday: 9 AM - 1 PM</td>
+                        <td>Eighth Floor, Room 801</td>
+                    </tr>
+                    <tr class="clinic-row" data-popup="STD Clinic schedule: Mon, Thu 2 PM - 6 PM">
+                        <td>STD Clinic</td>
+                        <td>Monday & Thursday: 2 PM - 6 PM</td>
+                        <td>Eighth Floor, Room 802</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <h2>We are here to give you the best service...</h2>
+
+        <!---------opd-------------->
+        <section class="opd-section">
+            <h2>Outpatient Department (OPD)</h2>
+            <p>Welcome to our Outpatient Department where we provide a range of medical services on an outpatient basis. Our dedicated team of healthcare professionals is here to serve you.</p>
+        
+            <div class="opd-services">
+                <div class="opd-service">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Experienced Doctors</h3>
+                    <p>Our OPD is staffed with experienced and qualified doctors covering various specialties.</p>
+                </div>
+                <div class="opd-service">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Flexible Appointments</h3>
+                    <p>Schedule appointments at your convenience to minimize waiting times.</p>
+                </div>
+                <div class="opd-service">
+                    <i class="fas fa-medkit"></i>
+                    <h3>Comprehensive Care</h3>
+                    <p>We offer a wide range of medical services to address your healthcare needs.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Emergency Unit Section -->
+        <section class="emergency-section">
+            <h2>Emergency Unit</h2>
+            <p>Our Emergency Unit is committed to providing immediate and expert care in critical situations. We understand the urgency of emergencies and are here to assist you 24/7.</p>
+
+            <div class="emergency-services">
+                <div class="emergency-service">
+                    <i class="fas fa-ambulance"></i>
+                    <h3>Rapid Response</h3>
+                    <p>Our dedicated ambulance service ensures a quick and efficient response to emergencies.</p>
+                </div>
+                <div class="emergency-service">
+                    <i class="fas fa-user-nurse"></i>
+                    <h3>Experienced Staff</h3>
+                    <p>Our emergency team consists of highly skilled medical professionals trained to handle critical situations.</p>
+                </div>
+                <div class="emergency-service">
+                    <i class="fas fa-hospital"></i>
+                    <h3>State-of-the-Art Facilities</h3>
+                    <p>We have modern facilities equipped with advanced medical technology to address emergency cases.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <!-- First Column -->
+        <div class="footer-column">
+            <div class="logo">
+                <img src="img/hospital_logo.png" alt="Hospital Logo">
+            </div>
+            <p>Nuwara-Eliya General Hospital</p>
+        </div>
+    
+        <!-- Second Column -->
+        <div class="footer-column">
+            <p>We are offering</p>
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="staff.html">Staff</a></li>
+            </ul>
+        </div>
+    
+        <!-- Third Column -->
+        <div class="footer-column">
+            <p>Contact Us</p>
+            <p>Email: info@hospital.com</p>
+            <p>Telephone: 052 222 2262</p>
+            <div class="social-media">
+
+                <a href="#"><img src="path/to/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Intagram"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Youtube"></a>
+
+            </div>
+        </div>
+    
+        <!-- Fourth Column -->
+        <div class="footer-column">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15841.192752515819!2d80.7801506!3d6.974103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae38044342cbbcb%3A0x7486760907e9ac38!2sDistrict%20General%20Hospital%20Nuwara%20Eliya!5e0!3m2!1sen!2slk!4v1706887777408!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <div class="copyright-section">
+        <p>&copy; 2024 Nuwara-Eliya General Hospital. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+    </div>
+</body>
+</html>

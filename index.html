@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-1qY+X+4/BQaR6wFqFfMw+gftYEsL6Q3oVMkzK7p6qk5tzsIa8fmpV3t9XBRxGF+RvH6L4eB3i3yo5iZoWO2h3Cg==" crossorigin="anonymous" />
+    <title>Nuwara-Eliya General Hospital</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/hospital_logo.png" alt="Hospital Logo">
+        </div>
+        <div class="hospital-info">
+            <h1>Nuwara-Eliya General Hospital</h1>
+            <p>Healing with Heart, Caring with Expertise.</p>
+        </div>
+
+        <!-- Top Navigation: Search Bar, Sign In, Sign Up -->
+        <div class="top-navigation">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <img src="img/srch.png" alt="" height="35px">
+            </div>                        
+
+            <div class="user-buttons">
+                <button class="sign-in-btn" onclick="navigateTosignin()">Sign In</button>
+                <button class="sign-up-btn" onclick="navigateTosignup()">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="news.html">News and Events</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="home">
+        <section class="home-heading">
+            <img src="img/wallpaper1.jpg" alt="Hospital Wallpaper">
+            <h2>Caring Beyond Cure, Serving Beyond Hospital Walls.
+            <br><br><br>
+            <button type="submit" class="app-btn" onclick="navigateToAppointment()">Appoint from here</button>
+            </h2>
+            <video class="homevid" autoplay muted loop>
+                <source src="vid/vid1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br><br><br>
+            <div>
+                <h1><strong>Mission:</strong> To provide accessible, high-quality healthcare for the well-being of our community.</h1>
+                <br><br>
+                <h1><strong>Vision:</strong> Striving for excellence in healthcare services and promoting a healthier society.</h1>
+                
+            </div>
+        </section>
+        <section>
+            <section class="gallery-section">
+                <div class="gallery-item">
+                    <img src="img/wallpaper1.jpg" alt="Gallery Photo 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/wallpaper3.jpg" alt="Gallery Photo 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/wallpaper4.jpg" alt="Gallery Photo 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/wallpaper5.jpg" alt="Gallery Photo 4">
+                </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- First Column -->
+        <div class="footer-column">
+            <div class="logo">
+                <img src="img/hospital_logo.png" alt="Hospital Logo">
+            </div>
+            <p>Nuwara-Eliya General Hospital</p>
+        </div>
+    
+        <!-- Second Column -->
+        <div class="footer-column">
+            <p>We are offering</p>
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="staff.html">Staff</a></li>
+            </ul>
+        </div>
+    
+        <!-- Third Column -->
+        <div class="footer-column">
+            <p>Contact Us</p>
+            <p>Email: info@hospital.com</p>
+            <p>Telephone: 052 222 2262</p>
+            <div class="social-media">
+
+                <a href="#"><img src="path/to/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Intagram"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Youtube"></a>
+
+            </div>
+        </div>
+    
+        <!-- Fourth Column -->
+        <div class="footer-column">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15841.192752515819!2d80.7801506!3d6.974103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae38044342cbbcb%3A0x7486760907e9ac38!2sDistrict%20General%20Hospital%20Nuwara%20Eliya!5e0!3m2!1sen!2slk!4v1706887777408!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <div class="copyright-section">
+        <p>&copy; 2024 Nuwara-Eliya General Hospital. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+    </div>
+</body>
+</html>

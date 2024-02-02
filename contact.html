@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Nuwara-Eliya General Hospital - Contact Us</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/hospital_logo.png" alt="Hospital Logo">
+        </div>
+        <div class="hospital-info">
+            <h1>Nuwara-Eliya General Hospital</h1>
+            <p>Healing with Heart, Caring with Expertise.</p>
+        </div>
+
+        <!-- Top Navigation: Search Bar, Sign In, Sign Up -->
+        <div class="top-navigation">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>                        
+
+            <div class="user-buttons">
+                <button class="sign-in-btn" onclick="navigateTosignin()">Sign In</button>
+                <button class="sign-up-btn" onclick="navigateTosignup()">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="news.html">News and Events</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+        <main class="cont">
+
+        <h2>Keep touch with us...</h2>
+            <!-- Contact Form -->
+            <section class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </section>
+        </main>
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <!-- First Column -->
+        <div class="footer-column">
+            <div class="logo">
+                <img src="img/hospital_logo.png" alt="Hospital Logo">
+            </div>
+            <p>Nuwara-Eliya General Hospital</p>
+        </div>
+    
+        <!-- Second Column -->
+        <div class="footer-column">
+            <p>We are offering</p>
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="staff.html">Staff</a></li>
+            </ul>
+        </div>
+    
+        <!-- Third Column -->
+        <div class="footer-column">
+            <p>Contact Us</p>
+            <p>Email: info@hospital.com</p>
+            <p>Telephone: 052 222 2262</p>
+            <div class="social-media">
+
+                <a href="#"><img src="path/to/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Intagram"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Youtube"></a>
+
+            </div>
+        </div>
+    
+        <!-- Fourth Column -->
+        <div class="footer-column">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15841.192752515819!2d80.7801506!3d6.974103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae38044342cbbcb%3A0x7486760907e9ac38!2sDistrict%20General%20Hospital%20Nuwara%20Eliya!5e0!3m2!1sen!2slk!4v1706887777408!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <div class="copyright-section">
+        <p>&copy; 2024 Nuwara-Eliya General Hospital. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

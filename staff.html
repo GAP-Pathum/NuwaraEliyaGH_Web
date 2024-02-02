@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Nuwara-Eliya General Hospital - Staff</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/hospital_logo.png" alt="Hospital Logo">
+        </div>
+        <div class="hospital-info">
+            <h1>Nuwara-Eliya General Hospital</h1>
+            <p>Healing with Heart, Caring with Expertise.</p>
+        </div>
+
+        <!-- Top Navigation: Search Bar, Sign In, Sign Up -->
+        <div class="top-navigation">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>                        
+
+            <div class="user-buttons">
+                <button class="sign-in-btn" onclick="navigateTosignin()">Sign In</button>
+                <button class="sign-up-btn" onclick="navigateTosignup()">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="news.html">News and Events</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h2>This is our Director Board...</h2>
+        <section class="doctor-cards">
+            <div>
+                <div class="doctor-card" >
+                    <img src="img/dir1.jpg" width="100" height="100" alt="">
+                    <div class="director-details">
+                        <h3>Dr. Nimal Perera</h3>
+                        <p>Chairman</p>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <img src="img/dir2.jpg" width="100" height="100" alt="">
+                    <div class="director-details">
+                        <h3>Dr. Nethmi Jayasekara</h3>
+                        <p>Secretary</p>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <img src="img/dir3.jpg" width="100" height="100" alt="">
+                    <div class="director-details">
+                        <h3>Dr. Lahiru Fernando</h3>
+                        <p>Treasurer</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-------Doctors------->
+
+        <br><h2>This is our Doctor Staff...</h2>
+        <section class="doctor-categories" id="doctorCategories">
+            
+            <div class="category-card" data-category="cardiology">
+                <img src="img/cardiology.png" width="200" height="200" alt="Cardiology" onclick="showDoctors('cardiology')">
+                <p>Cardiology</p>
+            </div>
+            <div class="category-card" data-category="orthopedics">
+                <img src="img/orthopedics.jpg" width="200" height="200" alt="Orthopedics" onclick="showDoctors('orthopedics')">
+                <p>Orthopedics</p>
+            </div>
+            <div class="category-card" data-category="ent">
+                <img src="img/ent.jpg" width="200" height="200" alt="ENT" onclick="showDoctors('ent')">
+                <p>ENT</p>
+            </div>
+            <div class="category-card" data-category="dermatology">
+                <img src="img/dermatology.jpg" width="200" height="200" alt="Dermatology" onclick="showDoctors('dermatology')">
+                <p>Dermatology</p>
+            </div>
+            <div class="category-card" data-category="eye">
+                <img src="img/eye.jpg" width="200" height="200" alt="Eye" onclick="showDoctors('eye')">
+                <p>Eye</p>
+            </div>
+            <div class="category-card" data-category="diabetic">
+                <img src="img/diabetic.jpg" width="200" height="200" alt="Diabetic" onclick="showDoctors('diabetic')">
+                <p>Diabetic</p>
+            </div>
+            <div class="category-card" data-category="genecology">
+                <img src="img/genecology.png" width="200" height="200" alt="Genecology" onclick="showDoctors('genecology')">
+                <p>Genecology</p>
+            </div>
+            <div class="category-card" data-category="obstetrics">
+                <img src="img/obstetrics.jpg" width="200" height="200" alt="Obstetrics" onclick="showDoctors('obstetrics')">
+                <p>Obstetrics</p>
+            </div>
+            <div class="category-card" data-category="pediatric">
+                <img src="img/pediatric.jpg" width="200" height="200" alt="Pediatric" onclick="showDoctors('pediatric')">
+                <p>Pediatric</p>
+            </div>
+            <div class="category-card" data-category="medicine">
+                <img src="img/medicine.jpg" width="200" height="200" alt="Medicine" onclick="showDoctors('medicine')">
+                <p>Medicine</p>
+            </div>
+            <div class="category-card" data-category="surgery">
+                <img src="img/surgery.jpg" width="200" height="200" alt="Surgery" onclick="showDoctors('surgery')">
+                <p>Surgery</p>
+            </div>
+            <div class="category-card" data-category="hematology">
+                <img src="img/hematology.jpg" width="200" height="200" alt="Hematology" onclick="showDoctors('hematology')">
+                <p>Hematology</p>
+            </div>
+            <div class="category-card" data-category="rheumatology">
+                <img src="img/rheumatology.jpg" width="200" height="200" alt="Rheumatology" onclick="showDoctors('rheumatology')">
+                <p>Rheumatology</p>
+            </div>
+            <div class="category-card" data-category="psychiatry">
+                <img src="img/psychiatry.jpg" width="200" height="200" alt="Psychiatry" onclick="showDoctors('psychiatry')">
+                <p>Psychiatry</p>
+            </div>
+            <div class="category-card" data-category="neurology">
+                <img src="img/neurology.jpg" width="200" height="200" alt="Neurology" onclick="showDoctors('neurology')">
+                <p>Neurology</p>
+            </div>
+            <div class="category-card" data-category="neurosurgery">
+                <img src="img/neurosurgery.jpg" width="200" height="200" alt="Neurosurgery" onclick="showDoctors('neurosurgery')">
+                <p>Neurosurgery</p>
+            </div>
+            <div class="category-card" data-category="std">
+                <img src="img/std.jpg" width="200" height="200" alt="STD" onclick="showDoctors('std')">
+                <p>STD</p>
+            </div>
+            <!-- Add more categories as needed -->
+        </section>
+    
+        <!-- Doctor Cards -->
+        <section class="doctor-cards" id="doctorCards">
+            <!-- Cardiology Doctors -->
+            <div class="doctor-card" data-category="cardiology" onclick="showDoctorDetails('Dr. Wasana Jayasekara', 'Cardiologist', 'Specialized in heart-related issues.')">
+                <img src="img/cardi1.jpg" width="100" height="100" alt="Dr. Wasana Jayasekara">
+                <div class="doctor-details">
+                    <h3>Dr. Wasana Jayasekara</h3>
+                    <p>Cardiologist</p>
+                    <p>Specialized in heart-related issues.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="cardiology" onclick="showDoctorDetails('Dr. Chamal Perera', 'Cardiologist', 'Expert in cardiovascular diseases.')">
+                <img src="img/cardi2.jpg" width="100" height="100" alt="Dr. Chamal Perera">
+                <div class="doctor-details">
+                    <h3>Dr. Chamal Perera</h3>
+                    <p>Cardiologist</p>
+                    <p>Expert in cardiovascular diseases.</p>
+                </div>
+            </div>
+    
+            <!-- Orthopedics Doctors -->
+            <div class="doctor-card" data-category="orthopedics" onclick="showDoctorDetails('Dr. Minula Basnayaka', 'Orthopedic Surgeon', 'Specialized in bone and joint surgeries.')">
+                <img src="img/ortho1.jpg" width="200" height="200" alt="Dr. Minula Basnayaka">
+                <div class="doctor-details">
+                    <h3>Dr. Minula Basnayaka</h3>
+                    <p>Orthopedic Surgeon</p>
+                    <p>Specialized in bone and joint surgeries.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="orthopedics" onclick="showDoctorDetails('Dr. Nimal Kodithuwakku', 'Orthopedic Specialist', 'Expert in musculoskeletal disorders.')">
+                <img src="img/ortho2.jpg" width="200" height="200" alt="Dr. Nimal Kodithuwakku">
+                <div class="doctor-details">
+                    <h3>Dr. Nimal Kodithuwakku</h3>
+                    <p>Orthopedic Specialist</p>
+                    <p>Expert in musculoskeletal disorders.</p>
+                </div>
+            </div>
+    
+            <!-- ENT Doctors -->
+            <div class="doctor-card" data-category="ent" onclick="showDoctorDetails('Dr. Kasun Jayawardena', 'ENT Specialist', 'Experienced in ear, nose, and throat treatments.')">
+                <img src="img/ent1.jpg" width="200" height="200" alt="Dr. Kasun Jayawardena">
+                <div class="doctor-details">
+                    <h3>Dr. Kasun Jayawardena</h3>
+                    <p>ENT Specialist</p>
+                    <p>Experienced in ear, nose, and throat treatments.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="ent" onclick="showDoctorDetails('Dr. Chandula de Silva', 'ENT Surgeon', 'Specialized in surgical procedures for ENT disorders.')">
+                <img src="img/ent2.jpg" width="200" height="200" alt="Dr. Chandula de Silva">
+                <div class="doctor-details">
+                    <h3>Dr. Chandula de Silva</h3>
+                    <p>ENT Surgeon</p>
+                    <p>Specialized in surgical procedures for ENT disorders.</p>
+                </div>
+            </div>
+    
+            <!-- Dermatology Doctors -->
+            <div class="doctor-card" data-category="dermatology" onclick="showDoctorDetails('Dr. Samantha Silva', 'Dermatologist', 'Expert in skin disorders and treatments.')">
+                <img src="img/derm1.jpg" width="200" height="200" alt="Dr. Samantha Silva">
+                <div class="doctor-details">
+                    <h3>Dr. Samantha Silva</h3>
+                    <p>Dermatologist</p>
+                    <p>Expert in skin disorders and treatments.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="dermatology" onclick="showDoctorDetails('Dr. Mark Fernando', 'Dermatology Specialist', 'Specialized in cosmetic dermatology.')">
+                <img src="img/derm2.jpg" width="200" height="200" alt="Dr. Mark Fernando">
+                <div class="doctor-details">
+                    <h3>Dr. Mark Fernando</h3>
+                    <p>Dermatology Specialist</p>
+                    <p>Specialized in cosmetic dermatology.</p>
+                </div>
+            </div>
+    
+            <!-- Eye Doctors -->
+            <div class="doctor-card" data-category="eye" onclick="showDoctorDetails('Dr. Nirosha Perera', 'Ophthalmologist', 'Expert in eye care and surgeries.')">
+                <img src="img/eye1.jpg" width="200" height="200" alt="Dr. Nirosha Perera">
+                <div class="doctor-details">
+                    <h3>Dr. Nirosha Perera</h3>
+                    <p>Ophthalmologist</p>
+                    <p>Expert in eye care and surgeries.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="eye" onclick="showDoctorDetails('Dr. Rohan Mendis', 'Eye Surgeon', 'Specialized in eye surgeries and treatments.')">
+                <img src="img/eye2.jpg" width="200" height="200" alt="Dr. Rohan Mendis">
+                <div class="doctor-details">
+                    <h3>Dr. Rohan Mendis</h3>
+                    <p>Eye Surgeon</p>
+                    <p>Specialized in eye surgeries and treatments.</p>
+                </div>
+            </div>
+    
+            <!-- Diabetic Doctors -->
+            <div class="doctor-card" data-category="diabetic" onclick="showDoctorDetails('Dr. Priyantha De Silva', 'Diabetologist', 'Expert in diabetes management and care.')">
+                <img src="img/diabetic1.jpg" width="200" height="200" alt="Dr. Priyantha De Silva">
+                <div class="doctor-details">
+                    <h3>Dr. Priyantha De Silva</h3>
+                    <p>Diabetologist</p>
+                    <p>Expert in diabetes management and care.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="diabetic" onclick="showDoctorDetails('Dr. Shani Perera', 'Endocrinologist', 'Specialized in endocrine disorders and diabetic care.')">
+                <img src="img/diabetic2.jpg" width="200" height="200" alt="Dr. Shani Perera">
+                <div class="doctor-details">
+                    <h3>Dr. Shani Perera</h3>
+                    <p>Endocrinologist</p>
+                    <p>Specialized in endocrine disorders and diabetic care.</p>
+                </div>
+            </div>
+    
+            <!-- Genecology Doctors -->
+            <div class="doctor-card" data-category="genecology" onclick="showDoctorDetails('Dr. Anoma Jayawardena', 'Genecologist', 'Expert in women\'s reproductive health.')">
+                <img src="img/genecology1.jpg" width="200" height="200" alt="Dr. Anoma Jayawardena">
+                <div class="doctor-details">
+                    <h3>Dr. Anoma Jayawardena</h3>
+                    <p>Genecologist</p>
+                    <p>Expert in women's reproductive health.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="genecology" onclick="showDoctorDetails('Dr. Chaminda Ranaweera', 'Obstetrician', 'Specialized in pregnancy and childbirth care.')">
+                <img src="img/genecology2.jpg" width="200" height="200" alt="Dr. Chaminda Ranaweera">
+                <div class="doctor-details">
+                    <h3>Dr. Chaminda Ranaweera</h3>
+                    <p>Obstetrician</p>
+                    <p>Specialized in pregnancy and childbirth care.</p>
+                </div>
+            </div>
+    
+            <!-- Obstetrics Doctors -->
+            <div class="doctor-card" data-category="obstetrics" onclick="showDoctorDetails('Dr. Himani Fernando', 'Obstetrician', 'Expert in pregnancy and childbirth care.')">
+                <img src="img/obstetrics1.jpg" width="200" height="200" alt="Dr. Himani Fernando">
+                <div class="doctor-details">
+                    <h3>Dr. Himani Fernando</h3>
+                    <p>Obstetrician</p>
+                    <p>Expert in pregnancy and childbirth care.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="obstetrics" onclick="showDoctorDetails('Dr. Thilina Perera', 'Obstetrics Specialist', 'Specialized in high-risk pregnancies.')">
+                <img src="img/obstetrics2.jpg" width="200" height="200" alt="Dr. Thilina Perera">
+                <div class="doctor-details">
+                    <h3>Dr. Thilina Perera</h3>
+                    <p>Obstetrics Specialist</p>
+                    <p>Specialized in high-risk pregnancies.</p>
+                </div>
+            </div>
+    
+            <!-- Pediatric Doctors -->
+            <div class="doctor-card" data-category="pediatric" onclick="showDoctorDetails('Dr. Malith Perera', 'Pediatrician', 'Expert in child health and development.')">
+                <img src="img/pediatric1.jpg" width="200" height="200" alt="Dr. Malith Perera">
+                <div class="doctor-details">
+                    <h3>Dr. Malith Perera</h3>
+                    <p>Pediatrician</p>
+                    <p>Expert in child health and development.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="pediatric" onclick="showDoctorDetails('Dr. Amara Silva', 'Pediatric Specialist', 'Specialized in pediatric diseases and care.')">
+                <img src="img/pediatric2.jpg" width="200" height="200" alt="Dr. Amara Silva">
+                <div class="doctor-details">
+                    <h3>Dr. Amara Silva</h3>
+                    <p>Pediatric Specialist</p>
+                    <p>Specialized in pediatric diseases and care.</p>
+                </div>
+            </div>
+    
+            <!-- Medicine Doctors -->
+            <div class="doctor-card" data-category="medicine" onclick="showDoctorDetails('Dr. Nuwan Ranasinghe', 'General Physician', 'Expert in general medicine and health.')">
+                <img src="img/medicine1.jpg" width="200" height="200" alt="Dr. Nuwan Ranasinghe">
+                <div class="doctor-details">
+                    <h3>Dr. Nuwan Ranasinghe</h3>
+                    <p>General Physician</p>
+                    <p>Expert in general medicine and health.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="medicine" onclick="showDoctorDetails('Dr. Samadhi Liyanage', 'Internal Medicine Specialist', 'Specialized in internal medicine and diseases.')">
+                <img src="img/medicine2.jpg" width="200" height="200" alt="Dr. Samadhi Liyanage">
+                <div class="doctor-details">
+                    <h3>Dr. Samadhi Liyanage</h3>
+                    <p>Internal Medicine Specialist</p>
+                    <p>Specialized in internal medicine and diseases.</p>
+                </div>
+            </div>
+    
+            <!-- Surgery Doctors -->
+            <div class="doctor-card" data-category="surgery" onclick="showDoctorDetails('Dr. Kamal Silva', 'General Surgeon', 'Expert in general surgeries and procedures.')">
+                <img src="img/surgery1.jpg" width="200" height="200" alt="Dr. Kamal Silva">
+                <div class="doctor-details">
+                    <h3>Dr. Kamal Silva</h3>
+                    <p>General Surgeon</p>
+                    <p>Expert in general surgeries and procedures.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="surgery" onclick="showDoctorDetails('Dr. Dinusha Perera', 'Surgical Specialist', 'Specialized in surgical procedures and care.')">
+                <img src="img/surgery2.jpg" width="200" height="200" alt="Dr. Dinusha Perera">
+                <div class="doctor-details">
+                    <h3>Dr. Dinusha Perera</h3>
+                    <p>Surgical Specialist</p>
+                    <p>Specialized in surgical procedures and care.</p>
+                </div>
+            </div>
+    
+            <!-- Hematology Doctors -->
+            <div class="doctor-card" data-category="hematology" onclick="showDoctorDetails('Dr. Harsha Rajapakse', 'Hematologist', 'Expert in blood-related disorders and treatments.')">
+                <img src="img/hematology1.jpg" width="200" height="200" alt="Dr. Harsha Rajapakse">
+                <div class="doctor-details">
+                    <h3>Dr. Harsha Rajapakse</h3>
+                    <p>Hematologist</p>
+                    <p>Expert in blood-related disorders and treatments.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="hematology" onclick="showDoctorDetails('Dr. Dinithi Perera', 'Hematology Specialist', 'Specialized in hematological disorders.')">
+                <img src="img/hematology2.jpg" width="200" height="200" alt="Dr. Dinithi Perera">
+                <div class="doctor-details">
+                    <h3>Dr. Dinithi Perera</h3>
+                    <p>Hematology Specialist</p>
+                    <p>Specialized in hematological disorders.</p>
+                </div>
+            </div>
+    
+            <!-- Rheumatology Doctors -->
+            <div class="doctor-card" data-category="rheumatology" onclick="showDoctorDetails('Dr. Sameera Ranasinghe', 'Rheumatologist', 'Expert in rheumatic disorders and arthritis.')">
+                <img src="img/rheumatology1.jpg" width="200" height="200" alt="Dr. Sameera Ranasinghe">
+                <div class="doctor-details">
+                    <h3>Dr. Sameera Ranasinghe</h3>
+                    <p>Rheumatologist</p>
+                    <p>Expert in rheumatic disorders and arthritis.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="rheumatology" onclick="showDoctorDetails('Dr. Nethmi Fernando', 'Rheumatology Specialist', 'Specialized in rheumatic diseases.')">
+                <img src="img/rheumatology2.jpg" width="200" height="200" alt="Dr. Nethmi Fernando">
+                <div class="doctor-details">
+                    <h3>Dr. Nethmi Fernando</h3>
+                    <p>Rheumatology Specialist</p>
+                    <p>Specialized in rheumatic diseases.</p>
+                </div>
+            </div>
+    
+            <!-- Psychiatry Doctors -->
+            <div class="doctor-card" data-category="psychiatry" onclick="showDoctorDetails('Dr. Roshan Silva', 'Psychiatrist', 'Expert in mental health and psychiatric care.')">
+                <img src="img/psychiatry1.jpg" width="200" height="200" alt="Dr. Roshan Silva">
+                <div class="doctor-details">
+                    <h3>Dr. Roshan Silva</h3>
+                    <p>Psychiatrist</p>
+                    <p>Expert in mental health and psychiatric care.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="psychiatry" onclick="showDoctorDetails('Dr. Anjali Mendis', 'Psychiatry Specialist', 'Specialized in psychiatric disorders and treatments.')">
+                <img src="img/psychiatry2.jpg" width="200" height="200" alt="Dr. Anjali Mendis">
+                <div class="doctor-details">
+                    <h3>Dr. Anjali Mendis</h3>
+                    <p>Psychiatry Specialist</p>
+                    <p>Specialized in psychiatric disorders and treatments.</p>
+                </div>
+            </div>
+    
+            <!-- Neurology Doctors -->
+            <div class="doctor-card" data-category="neurology" onclick="showDoctorDetails('Dr. Sanjeewa Gunasekara', 'Neurologist', 'Expert in neurological disorders and treatments.')">
+                <img src="img/neurology1.jpg" width="200" height="200" alt="Dr. Sanjeewa Gunasekara">
+                <div class="doctor-details">
+                    <h3>Dr. Sanjeewa Gunasekara</h3>
+                    <p>Neurologist</p>
+                    <p>Expert in neurological disorders and treatments.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="neurology" onclick="showDoctorDetails('Dr. Amal Peiris', 'Neurology Specialist', 'Specialized in neurological care and diseases.')">
+                <img src="img/neurology2.jpg" width="200" height="200" alt="Dr. Amal Peiris">
+                <div class="doctor-details">
+                    <h3>Dr. Amal Peiris</h3>
+                    <p>Neurology Specialist</p>
+                    <p>Specialized in neurological care and diseases.</p>
+                </div>
+            </div>
+    
+            <!-- Neurosurgery Doctors -->
+            <div class="doctor-card" data-category="neurosurgery" onclick="showDoctorDetails('Dr. Haritha Senanayake', 'Neurosurgeon', 'Expert in neurosurgical procedures and surgeries.')">
+                <img src="img/neurosurgery1.jpg" width="200" height="200" alt="Dr. Haritha Senanayake">
+                <div class="doctor-details">
+                    <h3>Dr. Haritha Senanayake</h3>
+                    <p>Neurosurgeon</p>
+                    <p>Expert in neurosurgical procedures and surgeries.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="neurosurgery" onclick="showDoctorDetails('Dr. Charitha Perera', 'Neurosurgery Specialist', 'Specialized in neurosurgical care and treatments.')">
+                <img src="img/neurosurgery2.jpg" width="200" height="200" alt="Dr. Charitha Perera">
+                <div class="doctor-details">
+                    <h3>Dr. Charitha Perera</h3>
+                    <p>Neurosurgery Specialist</p>
+                    <p>Specialized in neurosurgical care and treatments.</p>
+                </div>
+            </div>
+    
+            <!-- STD Doctors -->
+            <div class="doctor-card" data-category="std" onclick="showDoctorDetails('Dr. Malinda Rajapakse', 'STD Specialist', 'Expert in sexually transmitted disease prevention and care.')">
+                <img src="img/std1.jpg" width="200" height="200" alt="Dr. Malinda Rajapakse">
+                <div class="doctor-details">
+                    <h3>Dr. Malinda Rajapakse</h3>
+                    <p>STD Specialist</p>
+                    <p>Expert in sexually transmitted disease prevention and care.</p>
+                </div>
+            </div>
+            <div class="doctor-card" data-category="std" onclick="showDoctorDetails('Dr. Thilini Fernando', 'STD Consultant', 'Specialized in STD diagnosis and treatment.')">
+                <img src="img/std2.jpg" width="200" height="200" alt="Dr. Thilini Fernando">
+                <div class="doctor-details">
+                    <h3>Dr. Thilini Fernando</h3>
+                    <p>STD Consultant</p>
+                    <p>Specialized in STD diagnosis and treatment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctor Details Popup -->
+        <div class="doctor-popup" id="doctorPopup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <img src="" alt="Dr. Thilini Fernando" id="popupDoctorPhoto">
+                <div class="popup-details">
+                    <h3 id="popupDoctorName"></h3>
+                    <p id="popupDoctorPosition"></p>
+                    <p id="popupDoctorDescription"></p>
+                </div>
+            </div>
+        </div>
+<br><br>
+    <h2>This is our Nurse Staff...</h2>
+            <!-- Nurse Categories -->
+    <section class="doctor-categories" id="doctorCategories">
+        <!-- Registered Nurses (RNs) -->
+        <div class="category-card" data-category="rn">
+            <img src="img/rn.jpg" width="200" height="200" alt="Registered Nurses (RNs)" onclick="showNurses('rn')">
+            <p>Registered Nurses (RNs)</p>
+        </div>
+
+        <!-- Staff Nurses -->
+        <div class="category-card" data-category="staff-nurse">
+            <img src="img/staff-nurse.jpg" width="200" height="200" alt="Staff Nurses" onclick="showNurses('staff-nurse')">
+            <p>Staff Nurses</p>
+        </div>
+
+        <!-- Ward Sisters/Charge Nurses -->
+        <div class="category-card" data-category="ward-sister">
+            <img src="img/ward-sister.jpg" width="200" height="200" alt="Ward Sisters/Charge Nurses" onclick="showNurses('ward-sister')">
+            <p>Ward Sisters/Charge Nurses</p>
+        </div>
+
+        <!-- Public Health Nurses (PHNs) -->
+        <div class="category-card" data-category="phn">
+            <img src="img/phn.jpg" width="200" height="200" alt="Public Health Nurses (PHNs)" onclick="showNurses('phn')">
+            <p>Public Health Nurses (PHNs)</p>
+        </div>
+
+        <!-- Midwives -->
+        <div class="category-card" data-category="midwife">
+            <img src="img/midwife.jpg" width="200" height="200" alt="Midwives" onclick="showNurses('midwife')">
+            <p>Midwives</p>
+        </div>
+
+        <!-- Specialist Nurses -->
+        <div class="category-card" data-category="specialist-nurse">
+            <img src="img/specialist-nurse.jpg" width="200" height="200" alt="Specialist Nurses" onclick="showNurses('specialist-nurse')">
+            <p>Specialist Nurses</p>
+        </div>
+    </section>
+
+    <!-- Nurse Cards -->
+    <section class="doctor-cards" id="doctorCards">
+        <!-- RN Nurses -->
+        <div class="doctor-card" data-category="rn" onclick="showNurseDetails('RN Nurse Name', 'RN', 'Specialized in general nursing care.')">
+            <img src="img/rn1.jpg" width="100" height="100" alt="RN Nurse Name">
+            <div class="doctor-details">
+                <h3>RN Nurse Name</h3>
+                <p>RN</p>
+                <p>Specialized in general nursing care.</p>
+            </div>
+        </div>
+
+        <!-- Staff Nurses -->
+        <div class="doctor-card" data-category="staff-nurse" onclick="showNurseDetails('Staff Nurse Name', 'Staff Nurse', 'Experienced in hospital ward management.')">
+            <img src="img/staff-nurse1.jpg" width="100" height="100" alt="Staff Nurse Name">
+            <div class="doctor-details">
+                <h3>Staff Nurse Name</h3>
+                <p>Staff Nurse</p>
+                <p>Experienced in hospital ward management.</p>
+            </div>
+        </div>
+
+        <!-- Ward Sisters/Charge Nurses -->
+        <div class="doctor-card" data-category="ward-sister" onclick="showNurseDetails('Ward Sister Name', 'Ward Sister', 'Specialized in charge nurse duties.')">
+            <img src="img/ward-sister1.jpg" width="100" height="100" alt="Ward Sister Name">
+            <div class="doctor-details">
+                <h3>Ward Sister Name</h3>
+                <p>Ward Sister</p>
+                <p>Specialized in charge nurse duties.</p>
+            </div>
+        </div>
+
+        <!-- Public Health Nurses (PHNs) -->
+        <div class="doctor-card" data-category="phn" onclick="showNurseDetails('PHN Name', 'Public Health Nurse', 'Dedicated to community health and prevention.')">
+            <img src="img/phn1.jpg" width="100" height="100" alt="PHN Name">
+            <div class="doctor-details">
+                <h3>PHN Name</h3>
+                <p>Public Health Nurse</p>
+                <p>Dedicated to community health and prevention.</p>
+            </div>
+        </div>
+
+        <!-- Midwives -->
+        <div class="doctor-card" data-category="midwife" onclick="showNurseDetails('Midwife Name', 'Midwife', 'Specialized in prenatal and postnatal care.')">
+            <img src="img/midwife1.jpg" width="100" height="100" alt="Midwife Name">
+            <div class="doctor-details">
+                <h3>Midwife Name</h3>
+                <p>Midwife</p>
+                <p>Specialized in prenatal and postnatal care.</p>
+            </div>
+        </div>
+
+        <!-- Specialist Nurses -->
+        <div class="doctor-card" data-category="specialist-nurse" onclick="showNurseDetails('Specialist Nurse Name', 'Specialist Nurse', 'Expert in a specific nursing field.')">
+            <img src="img/specialist-nurse1.jpg" width="100" height="100" alt="Specialist Nurse Name">
+            <div class="doctor-details">
+                <h3>Specialist Nurse Name</h3>
+                <p>Specialist Nurse</p>
+                <p>Expert in a specific nursing field.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nurse Details Popup -->
+    <div class="nurse-popup" id="nursePopup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <img src="" alt="Nurse Photo" id="popupNursePhoto">
+            <div class="popup-details">
+                <h3 id="popupNurseName"></h3>
+                <p id="popupNursePosition"></p>
+                <p id="popupNurseDescription"></p>
+            </div>
+        </div>
+    </div>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- First Column -->
+        <div class="footer-column">
+            <div class="logo">
+                <img src="img/hospital_logo.png" alt="Hospital Logo">
+            </div>
+            <p>Nuwara-Eliya General Hospital</p>
+        </div>
+    
+        <!-- Second Column -->
+        <div class="footer-column">
+            <p>We are offering</p>
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="staff.html">Staff</a></li>
+            </ul>
+        </div>
+    
+        <!-- Third Column -->
+        <div class="footer-column">
+            <p>Contact Us</p>
+            <p>Email: info@hospital.com</p>
+            <p>Telephone: 052 222 2262</p>
+            <div class="social-media">
+
+                <a href="#"><img src="path/to/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Intagram"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Youtube"></a>
+
+            </div>
+        </div>
+    
+        <!-- Fourth Column -->
+        <div class="footer-column">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15841.192752515819!2d80.7801506!3d6.974103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae38044342cbbcb%3A0x7486760907e9ac38!2sDistrict%20General%20Hospital%20Nuwara%20Eliya!5e0!3m2!1sen!2slk!4v1706887777408!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <div class="copyright-section">
+        <p>&copy; 2024 Nuwara-Eliya General Hospital. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

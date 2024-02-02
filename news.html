@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Nuwara-Eliya General Hospital - News & Events</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/hospital_logo.png" alt="Hospital Logo">
+        </div>
+        <div class="hospital-info">
+            <h1>Nuwara-Eliya General Hospital</h1>
+            <p>Healing with Heart, Caring with Expertise.</p>
+        </div>
+
+        <!-- Top Navigation: Search Bar, Sign In, Sign Up -->
+        <div class="top-navigation">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>                        
+
+            <div class="user-buttons">
+                <button class="sign-in-btn" onclick="navigateTosignin()">Sign In</button>
+                <button class="sign-up-btn" onclick="navigateTosignup()">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="news.html">News and Events</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- News and Events Section -->
+        <div class="news-events-container">
+            <!-- Column 1: News Section -->
+            <section class="news-section">
+                <h2>Latest News</h2>
+                <div class="news-cards">
+                    <div class="news-card" onclick="toggleDetails('news1')">
+                        <img src="img\news1.jpg" alt="Event 3" height="300px" width="450px">
+                        <div class="news-details" id="news1">
+                            <h3>A New Chapter Begins: Hospital Relocates to Modern Complex</h3>
+                            <p>
+                                Step into a new era of healthcare excellence! Nuwara-Eliya General Hospital proudly 
+                                relocates to a modern complex, promising advanced facilities and compassionate care.
+                                 Our commitment to your well-being reaches new heights.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="news-card" onclick="toggleDetails('news2')">
+                        <img src="img\event4.jpg" alt="Event 3" height="300px" >
+                        <div class="news-details" id="news2">
+                            <h3>Empower Your Well-Being: Join Our Enlightening Awareness Session!</h3>
+                            <p>Explore the path to holistic health and happiness in our upcoming 
+                                well-being awareness session. Discover tips, insights, and practices 
+                                for a thriving life. Embrace wellness with us!
+                            </p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="news-card" onclick="toggleDetails('news3')">
+                        <img src="img\event2.jpg" alt="Event 3" height="300px">
+                        <div class="news-details" id="news3">
+                            <h3>Guardians of Tomorrow: Join Our Child Protection Session!</h3>
+                            <p>Unveil the importance of child protection 
+                                in our upcoming session. Learn valuable insights, tips, and resources
+                                 to ensure a safe and nurturing environment for our future generation.
+                                  Join us in safeguarding childhood!
+                            </p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="news-card" onclick="toggleDetails('news3')">
+                        <img src="img\event2.jpg" alt="Event 3" height="300px">
+                        <div class="news-details" id="news3">
+                            <h3>Guardians of Tomorrow: Join Our Child Protection Session!</h3>
+                            <p>Unveil the importance of child protection 
+                                in our upcoming session. Learn valuable insights, tips, and resources
+                                 to ensure a safe and nurturing environment for our future generation.
+                                  Join us in safeguarding childhood!
+                            </p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Column 2: Events Section -->
+            <section class="events-section">
+                <h2>Upcoming Events</h2>
+                <div class="event-cards">
+                    <div class="event-card" onclick="toggleDetails('event1')">
+                        <img src="img\eventgal3.jpg" alt="Event 1" height="300px" >
+                        <div class="event-details" id="event1">
+                            <h3>Health and Wellness Workshop</h3>
+                            <p>Join our health and wellness workshop for valuable insights. Click Read More for event details.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" onclick="toggleDetails('event2')">
+                        <img src="img\event3.jpg" alt="Event 2" height="300px">
+                        <div class="event-details" id="event2">
+                            <h3>Community Health Day</h3>
+                            <p>Participate in our community health day for free check-ups and health-related activities.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card" onclick="toggleDetails('event3')">
+                        <img src="img\event1.jpg" alt="Event 3" height="300px" >
+                        <div class="event-details" id="event3">
+                            <h3>Nutrition and Diet Seminar</h3>
+                            <p>Learn about nutrition and diet in our upcoming seminar. Click Read More for the schedule and topics.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <h2>We are showing our special events from here...</h2>
+        <section class="gallery-section">
+            <div class="gallery-item">
+                <img src="img/eventgal1.jpg" alt="Gallery Photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="img/eventgal2.jpg" alt="Gallery Photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="img/eventgal3.jpg" alt="Gallery Photo 3">
+            </div>
+            <div class="gallery-item">
+                <img src="img/eventgal4.jpg" alt="Gallery Photo 4">
+            </div>
+            <div class="gallery-item">
+                <img src="img/eventgal5.jpg" alt="Gallery Photo 5">
+            </div>
+            <div class="gallery-item">
+                <img src="img/eventgal6.jpg" alt="Gallery Photo 6">
+            </div> 
+            <div class="gallery-item">
+                <img src="img/eventgal7.jpg" alt="Gallery Photo 7">
+            </div>
+            <div class="gallery-item">
+                <img src="img/eventgal8.jpg" alt="Gallery Photo 8">
+            </div>
+            <div class="gallery-item">
+                <img src="img/eventgal9.jpg" alt="Gallery Photo 9">
+            </div>
+            <div class="gallery-item">
+                <img src="img/eventgal10.jpg" alt="Gallery Photo 10">
+            </div>
+            <div class="gallery-item">
+                <img src="img/eventgal11.jpg" alt="Gallery Photo 11">
+            </div>
+            <div class="gallery-item">
+                <img src="img/eventgal12.jpg" alt="Gallery Photo 12">
+            </div>
+            <div class="gallery-item">
+                <img src="img/eventgal13.jpg" alt="Gallery Photo 13">
+            </div>
+            <!-- Add more gallery items as needed -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <!-- First Column -->
+        <div class="footer-column">
+            <div class="logo">
+                <img src="img/hospital_logo.png" alt="Hospital Logo">
+            </div>
+            <p>Nuwara-Eliya General Hospital</p>
+        </div>
+    
+        <!-- Second Column -->
+        <div class="footer-column">
+            <p>We are offering</p>
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="staff.html">Staff</a></li>
+            </ul>
+        </div>
+    
+        <!-- Third Column -->
+        <div class="footer-column">
+            <p>Contact Us</p>
+            <p>Email: info@hospital.com</p>
+            <p>Telephone: 052 222 2262</p>
+            <div class="social-media">
+
+                <a href="#"><img src="path/to/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Intagram"></a>
+                <a href="#"><img src="path/to/twitter.png" alt="Youtube"></a>
+
+            </div>
+        </div>
+    
+        <!-- Fourth Column -->
+        <div class="footer-column">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15841.192752515819!2d80.7801506!3d6.974103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae38044342cbbcb%3A0x7486760907e9ac38!2sDistrict%20General%20Hospital%20Nuwara%20Eliya!5e0!3m2!1sen!2slk!4v1706887777408!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <div class="copyright-section">
+        <p>&copy; 2024 Nuwara-Eliya General Hospital. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
